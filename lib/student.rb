@@ -70,5 +70,5 @@ class Student
     SQL
 
     DB[:conn].execute(sql, name).map{|row| Student.new_from_db(row)}
-
+  end
 end
